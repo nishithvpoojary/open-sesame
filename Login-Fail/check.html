@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #6699ff;
+  padding: 20px 20px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: right;
+  font-weight: bold;
+  padding: 8px 40px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 8%;
+   padding: 20px 15px 20px 20px;
+   background-color:#6699ff;
+   color : white;
+   text-align: center;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: white;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    &emsp;&emsp;&emsp;&emsp;<img src="formula1.png"  alt="Car" width="70" height="40">
+  <div class="header-right">
+    <a href="#contact">Join a Race</a>
+    <a href="#contact">Leaderboard</a>
+    <a class="active" href="#about">Login</a>
+  </div>
+</div>
+
+<div class="clearfix"><br><br><br><br><br><br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="car.jpeg" style="float:left" alt="Car" width="700" height="260"> 
+    <div class="container">
+        <h2>Forgot Your Password?</h2>
+        <p>No worries happens to the best of us.</p>
+        <form class="form-inline" action="/action_page.php">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"><br>
+          <br><button style="background-color: black; color: white"">SEND PASSWORD RESET</button>
+        </form>
+      </div>
+</div>
+
+<div class="footer">
+    <a href="#contact">Turbo Type 2020</a>&emsp;&emsp;&emsp;&emsp;
+    <a href="#contact">About Us</a>&emsp;&emsp;&emsp;&emsp;
+    <a href="#contact">Privacy Policy</a>&emsp;&emsp;&emsp;&emsp;
+    <a href="#contact">Tutorials</a>&emsp;&emsp;&emsp;&emsp;
+    <a href="#contact">Terms of Service</a>&emsp;&emsp;&emsp;&emsp;
+  </div>
+
+</body>
+</html>
